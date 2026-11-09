@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+node_modules/
+frontend/dist/
+frontend/node_modules/
+.env
+.DS_Store
+.streamlit/credentials.toml

@@ -1,0 +1,160 @@
+{
+  "autoencoder": {
+    "accuracy": 0.9653564290473018,
+    "balanced_accuracy": 0.7077552400270453,
+    "precision": 0.4888888888888889,
+    "recall": 0.43137254901960786,
+    "f1": 0.45833333333333326,
+    "pr_auc_average_precision": 0.4743437070053707,
+    "tn": 1427,
+    "fp": 23,
+    "fn": 29,
+    "tp": 22,
+    "false_positive_rate": 0.015862068965517243,
+    "n_positive": 51,
+    "n_negative": 1450
+  },
+  "statistical_zscore": {
+    "accuracy": 0.9646902065289806,
+    "balanced_accuracy": 0.7074104124408385,
+    "precision": 0.4782608695652174,
+    "recall": 0.43137254901960786,
+    "f1": 0.4536082474226804,
+    "pr_auc_average_precision": 0.42265001623715065,
+    "tn": 1426,
+    "fp": 24,
+    "fn": 29,
+    "tp": 22,
+    "false_positive_rate": 0.016551724137931035,
+    "n_positive": 51,
+    "n_negative": 1450
+  },
+  "isolation_forest": {
+    "accuracy": 0.960692871419054,
+    "balanced_accuracy": 0.5918323191345504,
+    "precision": 0.35714285714285715,
+    "recall": 0.19607843137254902,
+    "f1": 0.2531645569620253,
+    "pr_auc_average_precision": 0.24568632347403377,
+    "tn": 1432,
+    "fp": 18,
+    "fn": 41,
+    "tp": 10,
+    "false_positive_rate": 0.012413793103448275,
+    "n_positive": 51,
+    "n_negative": 1450
+  },
+  "threshold": 0.021154126322062705,
+  "threshold_rule": "98.0th percentile of normal-only validation reconstruction errors",
+  "isolation_forest_threshold": 0.5888460961105804,
+  "isolation_forest_threshold_rule": "98.0th percentile of normal-only validation Isolation Forest scores",
+  "split_counts": {
+    "train": 6999,
+    "validation": 1500,
+    "test": 1501,
+    "normal_train": 6762,
+    "normal_validation": 1449
+  },
+  "feature_schema": {
+    "numeric_features": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]",
+      "Temp difference [K]",
+      "Power [W]",
+      "Overstrain [min Nm]"
+    ],
+    "base_numeric_features": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]"
+    ],
+    "derived_features": [
+      "Temp difference [K]",
+      "Power [W]",
+      "Overstrain [min Nm]"
+    ],
+    "include_physics": true,
+    "category_levels": [
+      "H",
+      "L",
+      "M"
+    ],
+    "mean": [
+      300.0115302186027,
+      310.01147306758105,
+      1539.661380197171,
+      39.948706958136874,
+      108.3639091298757,
+      9.999942848978426,
+      6275.4703773410365,
+      4322.583726246607
+    ],
+    "scale": [
+      2.0043751085682047,
+      1.4844254411129414,
+      180.43899788453433,
+      10.006606945845757,
+      63.372592328347636,
+      1.0009511105704372,
+      1072.9362243329558,
+      2811.2938204174434
+    ],
+    "input_features": [
+      "Air temperature [K]",
+      "Process temperature [K]",
+      "Rotational speed [rpm]",
+      "Torque [Nm]",
+      "Tool wear [min]",
+      "Temp difference [K]",
+      "Power [W]",
+      "Overstrain [min Nm]",
+      "Type=H",
+      "Type=L",
+      "Type=M"
+    ]
+  },
+  "configuration": {
+    "seed": 42,
+    "train_fraction": 0.7,
+    "validation_fraction": 0.15,
+    "threshold_percentile": 98.0,
+    "latent_dim": 7,
+    "epochs": 150,
+    "learning_rate": 0.005,
+    "batch_size": 128,
+    "patience": 15,
+    "rolling_window": 25,
+    "drift_fraction": 0.6,
+    "warning_uncertainty_margin": 0.1,
+    "include_physics": true
+  },
+  "versions": {
+    "python": "3.9.6",
+    "numpy": "2.0.2",
+    "pandas": "2.3.3"
+  },
+  "limitations": [
+    "AI4I is synthetic and the supplied CSV has no continuous per-machine identity.",
+    "Temporal experiments use source row order and represent ordered-row change detection.",
+    "The final test partition is stratified and held out.",
+    "Thresholds are selected from normal validation data.",
+    "Average precision is reported as the PR-AUC summary."
+  ],
+  "synthetic_drift_experiment": {
+    "sequence_length": 600,
+    "change_point_index": 300,
+    "shift": "3.0 standard deviations added to sensor channel",
+    "detected": true,
+    "first_detection_index": 314,
+    "detection_delay_observations": 14,
+    "threshold": 0.021154126322062705,
+    "rolling_window": 25,
+    "persistence_fraction": 0.6,
+    "interpretation": "Controlled synthetic sequence experiment; verified sequential change detection."
+  }
+}

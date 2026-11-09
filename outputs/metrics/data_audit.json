@@ -1,0 +1,336 @@
+{
+  "rows": 10000,
+  "columns": 14,
+  "column_names": [
+    "UDI",
+    "Product ID",
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ],
+  "dtypes": {
+    "UDI": "int64",
+    "Product ID": "object",
+    "Type": "object",
+    "Air temperature [K]": "float64",
+    "Process temperature [K]": "float64",
+    "Rotational speed [rpm]": "int64",
+    "Torque [Nm]": "float64",
+    "Tool wear [min]": "int64",
+    "Machine failure": "int64",
+    "TWF": "int64",
+    "HDF": "int64",
+    "PWF": "int64",
+    "OSF": "int64",
+    "RNF": "int64"
+  },
+  "missing": {
+    "UDI": 0,
+    "Product ID": 0,
+    "Type": 0,
+    "Air temperature [K]": 0,
+    "Process temperature [K]": 0,
+    "Rotational speed [rpm]": 0,
+    "Torque [Nm]": 0,
+    "Tool wear [min]": 0,
+    "Machine failure": 0,
+    "TWF": 0,
+    "HDF": 0,
+    "PWF": 0,
+    "OSF": 0,
+    "RNF": 0
+  },
+  "duplicate_rows": 0,
+  "descriptive_statistics": {
+    "UDI": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 5000.5,
+      "std": 2886.8956799071675,
+      "min": 1.0,
+      "25%": 2500.75,
+      "50%": 5000.5,
+      "75%": 7500.25,
+      "max": 10000.0
+    },
+    "Product ID": {
+      "count": 10000,
+      "unique": 10000,
+      "top": "M14860",
+      "freq": 1,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    "Type": {
+      "count": 10000,
+      "unique": 3,
+      "top": "L",
+      "freq": 6000,
+      "mean": "",
+      "std": "",
+      "min": "",
+      "25%": "",
+      "50%": "",
+      "75%": "",
+      "max": ""
+    },
+    "Air temperature [K]": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 300.00493,
+      "std": 2.000258682915751,
+      "min": 295.3,
+      "25%": 298.3,
+      "50%": 300.1,
+      "75%": 301.5,
+      "max": 304.5
+    },
+    "Process temperature [K]": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 310.00556,
+      "std": 1.4837342191657208,
+      "min": 305.7,
+      "25%": 308.8,
+      "50%": 310.1,
+      "75%": 311.1,
+      "max": 313.8
+    },
+    "Rotational speed [rpm]": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 1538.7761,
+      "std": 179.2840959134266,
+      "min": 1168.0,
+      "25%": 1423.0,
+      "50%": 1503.0,
+      "75%": 1612.0,
+      "max": 2886.0
+    },
+    "Torque [Nm]": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 39.986909999999995,
+      "std": 9.968933725121337,
+      "min": 3.8,
+      "25%": 33.2,
+      "50%": 40.1,
+      "75%": 46.8,
+      "max": 76.6
+    },
+    "Tool wear [min]": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 107.951,
+      "std": 63.654146636636355,
+      "min": 0.0,
+      "25%": 53.0,
+      "50%": 108.0,
+      "75%": 162.0,
+      "max": 253.0
+    },
+    "Machine failure": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0339,
+      "std": 0.18098084265065364,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "TWF": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0046,
+      "std": 0.06767051004531426,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "HDF": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0115,
+      "std": 0.10662498247919606,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "PWF": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0095,
+      "std": 0.09700871645943425,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "OSF": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0098,
+      "std": 0.09851360562404211,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    },
+    "RNF": {
+      "count": 10000.0,
+      "unique": "",
+      "top": "",
+      "freq": "",
+      "mean": 0.0019,
+      "std": 0.043549737748530666,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 0.0,
+      "max": 1.0
+    }
+  },
+  "numeric_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2886.0
+    ],
+    "Torque [Nm]": [
+      3.8,
+      76.6
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0
+    ]
+  },
+  "categorical_distributions": {
+    "Type": {
+      "L": 6000,
+      "M": 2997,
+      "H": 1003
+    }
+  },
+  "failure_balance": {
+    "0": 9661,
+    "1": 339
+  },
+  "failure_modes": {
+    "TWF": 46,
+    "HDF": 115,
+    "PWF": 95,
+    "OSF": 98,
+    "RNF": 19
+  },
+  "feature_correlations": {
+    "Air temperature [K]": {
+      "Air temperature [K]": 1.0,
+      "Process temperature [K]": 0.876107,
+      "Rotational speed [rpm]": 0.02267,
+      "Torque [Nm]": -0.013778,
+      "Tool wear [min]": 0.013853
+    },
+    "Process temperature [K]": {
+      "Air temperature [K]": 0.876107,
+      "Process temperature [K]": 1.0,
+      "Rotational speed [rpm]": 0.019277,
+      "Torque [Nm]": -0.014061,
+      "Tool wear [min]": 0.013488
+    },
+    "Rotational speed [rpm]": {
+      "Air temperature [K]": 0.02267,
+      "Process temperature [K]": 0.019277,
+      "Rotational speed [rpm]": 1.0,
+      "Torque [Nm]": -0.875027,
+      "Tool wear [min]": 0.000223
+    },
+    "Torque [Nm]": {
+      "Air temperature [K]": -0.013778,
+      "Process temperature [K]": -0.014061,
+      "Rotational speed [rpm]": -0.875027,
+      "Torque [Nm]": 1.0,
+      "Tool wear [min]": -0.003093
+    },
+    "Tool wear [min]": {
+      "Air temperature [K]": 0.013853,
+      "Process temperature [K]": 0.013488,
+      "Rotational speed [rpm]": 0.000223,
+      "Torque [Nm]": -0.003093,
+      "Tool wear [min]": 1.0
+    }
+  },
+  "identifier_columns": [
+    "UDI",
+    "Product ID"
+  ],
+  "sensor_variables": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "categorical_columns": [
+    "Type"
+  ],
+  "targets_excluded_from_inputs": [
+    "Machine failure",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ]
+}

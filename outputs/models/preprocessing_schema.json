@@ -1,0 +1,63 @@
+{
+  "numeric_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp difference [K]",
+    "Power [W]",
+    "Overstrain [min Nm]"
+  ],
+  "base_numeric_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "derived_features": [
+    "Temp difference [K]",
+    "Power [W]",
+    "Overstrain [min Nm]"
+  ],
+  "include_physics": true,
+  "category_levels": [
+    "H",
+    "L",
+    "M"
+  ],
+  "mean": [
+    300.0115302186027,
+    310.01147306758105,
+    1539.661380197171,
+    39.948706958136874,
+    108.3639091298757,
+    9.999942848978426,
+    6275.4703773410365,
+    4322.583726246607
+  ],
+  "scale": [
+    2.0043751085682047,
+    1.4844254411129414,
+    180.43899788453433,
+    10.006606945845757,
+    63.372592328347636,
+    1.0009511105704372,
+    1072.9362243329558,
+    2811.2938204174434
+  ],
+  "input_features": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Temp difference [K]",
+    "Power [W]",
+    "Overstrain [min Nm]",
+    "Type=H",
+    "Type=L",
+    "Type=M"
+  ]
+}
